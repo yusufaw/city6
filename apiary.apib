@@ -1,0 +1,38 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# City API
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## City Collection [/v1/cities]
+
+### List All City [GET]
+
++ Response 200 (application/json)
+
+            {
+                "status": 200,
+                "message": "OK",
+                "data":
+                    [
+                        {
+                            "id": "1",
+                            "name": "Jakarta",
+                            "description": "This is Jakarta",
+                            "background": "https://1.bp.blogspot.com/_sVebVmcpDjg/TSXM7B5DzeI/AAAAAAAABO4/aw5ptVgyLs4/s1600/Jakarta_01_by_luag.jpg"
+                        },
+                        {
+                            "id": "2",
+                            "name": "Yogyakarta",
+                            "description": "This is Yogyakarta",
+                            "background": "https://vacationspotindonesia.files.wordpress.com/2014/05/jogyakarta.jpg"
+                        },
+                        {
+                            "id": "3",
+                            "name": "Malang",
+                            "description": "This is Malang",
+                            "background": "https://upload.wikimedia.org/wikipedia/commons/9/96/Tugu_Malang.jpg"
+                        }
+                    ]
+            }
